@@ -14,6 +14,7 @@ func (s *user) GetUser() (*model.Users, error) {
 		if err == gorm.ErrRecordNotFound {
 			return nil, errs.NewNotFoundError(err.Error())
 		}
+
 		return nil, errs.NewUnexpectedError()
 	}
 	return users, nil
