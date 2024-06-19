@@ -1,0 +1,8 @@
+app:
+  port: 80
+  azure:
+    secretName: "api"
+    keyVaultURL: "https://secret-for-call-api.vault.azure.net/"
+    secretVault: ""
+database:
+  address: "sqlserver://sa:123BeerX@127.0.0.1?database=CMDEV"
